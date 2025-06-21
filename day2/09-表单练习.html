@@ -4,7 +4,7 @@
  * @Autor: malieyong
  * @Date: 2025-06-21 20:13:05
  * @LastEditors: malieyong
- * @LastEditTime: 2025-06-21 20:44:12
+ * @LastEditTime: 2025-06-21 22:25:09
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,16 +14,48 @@
     <title>input表单练习</title>
 </head>
 <body>
-    姓名：<input type="text"> <br>
-    密码：<input type="password"> <br>
+    <!-- 表单 -->
+    <form action="">
+
+    <!-- tex文本框, placeholder 占位文字 -->
+    <label for="name">姓名：</label>
+    <input type="text" placeholder="请输入姓名" id="name"> <br>
+    <!-- password 密码框 -->
+    <label for="pwd">密码：</label>
+    <input type="password" placeholder="请输入密码" id="pwd"> <br>
     性别：
-    <input type="radio" name="sex"> 男
-    <input type="radio" name="sex"> 女
+    <!--radio 单选框 checked 默认选择-->
+    <label >    <input type="radio" name="sex"> 男    </label>
+    <label ><input type="radio" name="sex" checked> 女 </label>
     <br>
     爱好：
-    <input type="checkbox"> 唱歌
-    <input type="checkbox"> 跳舞
-    <input type="checkbox"> 挣钱
+    <!--checkbox 复选框 -->
+    <label ><input type="checkbox"> 唱歌</label>
+    <label ><input type="checkbox"> 跳舞</label>
+    <label ><input type="checkbox" checked> 挣钱</label>
+    <br>
+    上传头像:
+    <!-- file 文件上传 multiple 上传多个-->
+    <input type="file" multiple>
+    <br>
+    籍贯:
+    <!-- select下拉选择，option选项 默认选中selected -->
+    <select name="" id="">
+        <option value="">北京市</option>
+        <option value="">山东</option>
+        <option value="" selected>重庆</option>
+        <option value="">四川</option>
+    </select>
+    <br>
+    <!-- 文本域 textarea -->
+     备注：
+     <textarea name="" id="" cols="20" rows="2" placeholder="请输入备注信息"></textarea>
+     <br>
+     <!-- 按钮 -->
+    <button type="reset">重置</button>
+    <button type="submit">提交</button>
+    </form>
+
     
 </body>
 </html>
