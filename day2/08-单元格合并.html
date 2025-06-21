@@ -1,0 +1,61 @@
+<!--
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: malieyong
+ * @Date: 2025-06-21 19:42:56
+ * @LastEditors: malieyong
+ * @LastEditTime: 2025-06-21 20:08:49
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格结构</title>
+</head>
+<body>
+    <!-- th 第一行才能进行使用，在表格中 -->
+    <!-- border 给表格加边框 -->
+     <!-- 
+    跨行合并，保留最上测单元格，添加属性rowspan 用户指定合并几行
+     跨列合并，保留最左测单元格，添加属性colspan 用户指定合并几列
+
+     然后删除需要合并的单元格
+     -->
+
+    <table border="1">
+        <thead> 
+        <tr>
+            <th>姓名</th>
+            <th>语文</th>
+            <th>数学</th>
+            <th>英语</th>
+        </tr>
+     </thead>
+
+     <tbody>
+        <tr>
+            <td>张三</td>
+            <td>100</td>
+            <td rowspan="2">120</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>120</td>
+            <td>50</td>
+        </tr>
+     </tbody>
+
+     <tfoot>
+        <tr>
+            <td>平均分</td>
+            <td colspan="3">115</td>
+            
+        </tr>
+     </tfoot>
+        
+    </table>
+    
+</body>
+</html>
