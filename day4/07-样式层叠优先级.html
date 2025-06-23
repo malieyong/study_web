@@ -1,0 +1,44 @@
+<!--
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: malieyong
+ * @Date: 2025-06-25 00:40:14
+ * @LastEditors: malieyong
+ * @LastEditTime: 2025-06-25 00:48:29
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 对同一个内容，样式层叠时，按照以下优先级
+        通配符<标签<类选择器<id选这器<行内样式<!important
+        */
+        * {
+            color: red;
+        }
+
+        div {
+            color: aqua !important;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        #pink {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="blue" id="pink" style="color: deeppink; ">这个是文字</div>
+
+</body>
+
+</html>
