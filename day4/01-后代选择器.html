@@ -1,0 +1,61 @@
+<!--
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: malieyong
+ * @Date: 2025-06-24 01:06:29
+ * @LastEditors: malieyong
+ * @LastEditTime: 2025-06-24 01:26:43
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        /* 父代+空格+子代 */
+        /* 后代选择器中 先执行孩子 在执行父亲 
+        例如：先执行下方的li 再执行.first  标签
+        */
+        .first li {
+            color: red;
+        }
+
+        div p span {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="first">
+        <li>我是无需列表</li>
+        <li>我是无需列表</li>
+        <li>我是无需列表</li>
+        <li>我是无需列表</li>
+    </ul>
+
+    <ul>
+        <li>我是无需列表</li>
+        <li>我是无需列表</li>
+        <li>我是无需列表</li>
+        <li>我是无需列表</li>
+    </ul>
+
+    <ol>
+        <li>我是有序列表</li>
+        <li>我是有序列表</li>
+        <li>我是有序列表</li>
+        <li>我是有序列表</li>
+    </ol>
+
+    <div>
+        <p>
+            <span>这是span标签</span>
+        </p>
+    </div>
+
+</body>
+
+</html>
