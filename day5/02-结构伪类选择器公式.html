@@ -1,0 +1,63 @@
+<!--
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: malieyong
+ * @Date: 2025-07-01 00:49:44
+ * @LastEditors: malieyong
+ * @LastEditTime: 2025-07-01 01:03:40
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器公式</title>
+    <style>
+        /* 2n 选择偶数 */
+        ul li:nth-child(2n) {
+            background: pink;
+        }
+
+        /* 2n-1 选择奇数 */
+        ul li:nth-child(2n-1) {
+            background: gray;
+        }
+
+        /* 5n 5的倍数 */
+        ul li:nth-child(5n) {
+            color: aqua;
+        }
+
+        /* -n+2 选择前2个*/
+        ul li:nth-child(-n+2) {
+            color: bisque;
+        }
+
+        /* n+5 选择后5个 */
+
+
+
+        ul li:hover {
+            background: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>第1个选择器</li>
+        <li>第2个选择器</li>
+        <li>第3个选择器</li>
+        <li>第4个选择器</li>
+        <li>第5个选择器</li>
+        <li>第6个选择器</li>
+        <li>第7个选择器</li>
+        <li>第8个选择器</li>
+        <li>第9个选择器</li>
+        <li>第10个选择器</li>
+    </ul>
+
+</body>
+
+</html>

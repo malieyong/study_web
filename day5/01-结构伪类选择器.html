@@ -1,0 +1,49 @@
+<!--
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: malieyong
+ * @Date: 2025-07-01 00:14:19
+ * @LastEditors: malieyong
+ * @LastEditTime: 2025-07-01 00:35:07
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <style>
+        /* 第一个 */
+        ul li:first-child {
+            color: red;
+        }
+
+        /* 最后一个 */
+        ul li:last-child {
+            color: green;
+        }
+
+        /* 指定第几个 */
+        ul li:nth-child(4) {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ul>li{第$个}*8 -->
+    <ul>
+        <li>第1个子标签</li>
+        <li>第2个子标签</li>
+        <li>第3个子标签</li>
+        <li>第4个子标签</li>
+        <li>第5个子标签</li>
+        <li>第6个子标签</li>
+        <li>第7个子标签</li>
+        <li>第8个子标签</li>
+    </ul>
+
+</body>
+
+</html>
