@@ -1,0 +1,72 @@
+<!--
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: malieyong
+ * @Date: 2025-07-04 00:27:39
+ * @LastEditors: malieyong
+ * @LastEditTime: 2025-07-04 00:48:03
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 边框 */
+            border: 1px solid #000;
+        }
+
+        input {
+            width: 490px;
+            height: 30px;
+            border: 2px solid red;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            border-top: 1px solid red;
+            border-left: 2px solid #000;
+            border-right: 3px solid #000;
+            border-bottom: 4px solid skyblue;
+
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            /* 下面样式会覆盖上方 */
+            border-top: 2px solid yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <br>
+    <input type="text" placeholder="微软平板">
+    <br>
+    <br>
+    <br>
+
+
+    <div class="box2"></div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="box3"></div>
+
+
+
+</body>
+
+</html>
