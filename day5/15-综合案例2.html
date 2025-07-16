@@ -1,0 +1,95 @@
+<!--
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: malieyong
+ * @Date: 2025-07-17 00:27:23
+ * @LastEditors: malieyong
+ * @LastEditTime: 2025-07-17 01:15:58
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* 向内 */
+            box-sizing: border-box;
+        }
+
+        li {
+            /* 取消小点 */
+            list-style: none;
+        }
+
+        .box {
+            width: 360px;
+            height: 190px;
+            /* background-color: pink; */
+            margin: 100px auto;
+        }
+
+        .box-hd {
+            height: 34px;
+            background-color: #eeeeee;
+            border: 1px solid #dbdee1;
+            border-left: 0;
+
+        }
+
+        .box-hd a {
+            /* 转化为块级元素 */
+            display: block;
+            width: 50px;
+            height: 34px;
+            background-color: #fff;
+            /* 文字居中 */
+            text-align: center;
+            line-height: 34px;
+            /* 文字格式 */
+            text-decoration: none;
+            color: black;
+            border-top: 3px solid #ff8400;
+            border-right: 1px solid #dbdee1;
+            margin-top: -1px;
+
+        }
+
+        .box-bd li {
+            line-height: 26px;
+            background: url(./image/square.png) no-repeat left center;
+            padding-left: 35px;
+        }
+
+        .box-bd li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box-hd">
+            <a href="">新闻</a>
+        </div>
+
+        <ul class="box-bd">
+            <li><a href="">新闻链接</a></li>
+            <li><a href="">新闻链接</a></li>
+            <li><a href="">新闻链接</a></li>
+            <li><a href="">新闻链接</a></li>
+            <li><a href="">新闻链接</a></li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
